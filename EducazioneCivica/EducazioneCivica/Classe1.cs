@@ -4,14 +4,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EducazioneCivica
+namespace Nammasp
 {
-    internal class Classe1
-    {
-        string alfbt = "abcdefghijklmnopqrstuvwxyz";
-        public static void Primo(string s, int n)
-        { 
 
+    public static class Classe1
+    {
+        public static string Primo(string input, int key)
+        {
+            string output = "";
+
+            foreach (char ch in input)
+                output += cipher(ch, key);
+
+            return output;
+        }
+        public static char cipher(char ch, int key)
+        {
+            if (!char.IsLetter(ch))
+            {
+
+                return ch;
+            }
+
+            char d = char.IsUpper(ch) ? 'A' : 'a';
+            return (char)((((ch + key) - d) % 26) + d);
+        }
+
+        public static void Main(String[] args)
+        {
         }
     }
 }
