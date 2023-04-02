@@ -90,6 +90,8 @@ namespace TestED
             var actual = Classe1.ScegliFunzione("abcd", 5);
             Assert.AreEqual(expected, actual);
         }
+
+        //questo test funziona solo se vengono eseguiti tutti i test insieme perchè la funzionalità 5 è stata gia richiesta da altri test
         [Test]
         public void Sesto_Equal_test()
         {
@@ -100,7 +102,7 @@ namespace TestED
             var actual = Classe1.getC();
             Assert.AreEqual(expected, actual);
         }
-
+        //questo test funziona solo se vengono eseguiti tutti i test insieme perchè la funzionalità 5 è stata gia richiesta da altri test
         [Test]
         public void Sesto_Equal_test2()
         {
