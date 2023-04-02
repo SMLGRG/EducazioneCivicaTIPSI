@@ -56,6 +56,14 @@ namespace Nammasp
             return res;
         }
 
+        public static void ScegliFunzione(string input, int key) 
+        {
+            if (key % 2 == 0)
+                calcolaNumeroSomma(input, key);
+            else
+                calcolaNumeroProdotto(input, key);
+        }
+
         public static void Main(String[] args)
         {
         }
