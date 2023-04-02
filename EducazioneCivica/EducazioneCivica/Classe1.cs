@@ -9,7 +9,7 @@ namespace Nammasp
 
     public static class Classe1
     {
-        public static string Primo(string input, int key)
+        public static string Encipher(string input, int key)
         {
             string output = "";
 
@@ -29,25 +29,9 @@ namespace Nammasp
             char d = char.IsUpper(ch) ? 'A' : 'a';
             return (char)((((ch + key) - d) % 26) + d);
         }
-        public static string Secondo(string input, int key)
+        public static string Decipher(string input, int key)
         {
-            string output = "";
-
-            foreach (char ch in input)
-                output += cipher(ch, key);
-
-            return output;
-        }
-        public static char cipher2(char ch, int key)
-        {
-            if (!char.IsLetter(ch))
-            {
-
-                return ch;
-            }
-
-            char d = char.IsUpper(ch) ? 'A' : 'a';
-            return (char)((((ch - key) - d) % 26) + d);
+            return Encipher(input, 26 - key);
         }
 
 

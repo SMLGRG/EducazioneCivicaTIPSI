@@ -17,14 +17,30 @@ namespace TestED
         public void Primo_Equal_test()
         {
             var expected = "msky";
-            var actual = Classe1.Primo("ciao",10);
+            var actual = Classe1.Encipher("ciao",10);
             Assert.AreEqual(expected, actual);
         }
         [Test]
         public void Primo_Equal_test2()
         {
             var expected = "hujifc";
-            var actual = Classe1.Primo("napoli", 20);
+            var actual = Classe1.Encipher("napoli", 20);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void Secondo_Equal_test1()
+        {
+            var expected = "ciao";
+            var actual = Classe1.Decipher("msky", 10);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void Secondo_Equal_test2()
+        {
+            var expected = "marco";
+            var actual = Classe1.Decipher("lzqbn", 1);
             Assert.AreEqual(expected, actual);
         }
     }
