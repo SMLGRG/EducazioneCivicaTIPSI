@@ -67,6 +67,11 @@ namespace Nammasp
                 return calcolaNumeroProdotto(input, key);
         }
 
+        public static double ScegliFunzione2(string input)
+        {
+            return ScegliFunzione(input,getC());
+        }
+
         public static int getC()
         {
             return c;

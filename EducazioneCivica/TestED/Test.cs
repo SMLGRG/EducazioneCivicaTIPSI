@@ -112,5 +112,13 @@ namespace TestED
             var actual = Classe1.getC();
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void Settimo_Equal_test()
+        {
+            var expected = 7;
+            var actual = Classe1.getC();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
