@@ -34,7 +34,7 @@ namespace Nammasp
             int k = 26 - key;
             return Encipher(input, k);
         }
-
+        //ogni lettera nei char ha un valore fisso 
         public static int calcolaNumero(string input, int key)
         {
             int output = 0;
