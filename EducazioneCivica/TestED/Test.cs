@@ -90,5 +90,12 @@ namespace TestED
             var actual = Classe1.ScegliFunzione("abcd", 5);
             Assert.AreEqual(expected, actual);
         }
+        [Test]
+        public void Sesto_Equal_test()
+        {
+            var expected = 2;
+            var actual = Classe1.getC();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

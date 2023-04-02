@@ -60,7 +60,7 @@ namespace Nammasp
 
         public static double ScegliFunzione(string input, int key) 
         {
-            Classe1.c += 1;
+            incrementC();
             if (key % 2 == 0)
                 return calcolaNumeroSomma(input, key);
             else
@@ -78,6 +78,9 @@ namespace Nammasp
 
         public static void Main(String[] args)
         {
+            ScegliFunzione("paolo", 5);
+            Console.WriteLine("numero");
+            Console.WriteLine(getC());
         }
     }
 }
