@@ -39,8 +39,8 @@ namespace TestED
         [Test]
         public void Secondo_Equal_test2()
         {
-            var expected = "marco";
-            var actual = Classe1.Decipher("lzqbn", 1);
+            var expected = "napoli";
+            var actual = Classe1.Decipher("hujifc", 20);
             Assert.AreEqual(expected, actual);
         }
     }

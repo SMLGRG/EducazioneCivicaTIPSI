@@ -31,7 +31,8 @@ namespace Nammasp
         }
         public static string Decipher(string input, int key)
         {
-            return Encipher(input, 26 - key);
+            int k = 26 - key;
+            return Encipher(input, k);
         }
 
 
