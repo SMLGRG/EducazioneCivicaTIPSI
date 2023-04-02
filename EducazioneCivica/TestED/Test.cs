@@ -74,5 +74,21 @@ namespace TestED
             var actual = Classe1.calcolaNumeroProdotto("abcd", 10);
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void Quinto_Equal_test1()
+        {
+            var expected = 280;
+            var actual = Classe1.ScegliFunzione("ciao", 10);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void Quinto_Equal_test2()
+        {
+            var expected = 5;
+            var actual = Classe1.ScegliFunzione("abcd", 5);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
