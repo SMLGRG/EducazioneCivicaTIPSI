@@ -37,7 +37,13 @@ namespace Nammasp
 
         public static int calcolaNumero(string input, int key)
         {
-            return 0;
+            int output = 0;
+            foreach (char ch in input)
+            {
+                output += ch;
+                output = output - 96;
+            }
+            return output*key;
         }
 
         public static void Main(String[] args)

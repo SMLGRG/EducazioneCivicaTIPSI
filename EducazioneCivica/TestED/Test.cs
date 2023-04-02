@@ -43,5 +43,13 @@ namespace TestED
             var actual = Classe1.Decipher("hujifc", 20);
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void Terzo_Equal_test()
+        {
+            var expected = "3";
+            var actual = Classe1.calcolaNumero("cccc", 20);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
