@@ -116,8 +116,16 @@ namespace TestED
         [Test]
         public void Settimo_Equal_test()
         {
-            var expected = 7;
-            var actual = Classe1.getC();
+            var expected = 58;
+            var actual = Classe1.ScegliFunzione2("ciao");
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void Settimo_Equal_test2()
+        {
+            var expected = 96;
+            var actual = Classe1.ScegliFunzione2("cccc");
             Assert.AreEqual(expected, actual);
         }
     }
