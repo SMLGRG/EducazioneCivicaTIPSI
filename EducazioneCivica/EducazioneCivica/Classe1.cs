@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace Nammasp
 
     public static class Classe1
     {
+        private static int c { get; set; }
         public static string Encipher(string input, int key)
         {
             string output = "";
@@ -58,10 +60,20 @@ namespace Nammasp
 
         public static double ScegliFunzione(string input, int key) 
         {
+            Classe1.c += 1;
             if (key % 2 == 0)
                 return calcolaNumeroSomma(input, key);
             else
                 return calcolaNumeroProdotto(input, key);
+        }
+
+        public static int getC()
+        {
+            return c;
+        }
+        public static void incrementC()
+        {
+            c += 1;
         }
 
         public static void Main(String[] args)
