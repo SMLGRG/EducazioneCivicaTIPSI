@@ -93,7 +93,20 @@ namespace TestED
         [Test]
         public void Sesto_Equal_test()
         {
-            var expected = 2;
+            var expected = 3;
+            //for (int i = 0; i < 2; i++)
+                Classe1.ScegliFunzione("abcd", 5);
+
+            var actual = Classe1.getC();
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void Sesto_Equal_test2()
+        {
+            var expected = 7;
+            for(int i = 0; i < 4; i++)
+                Classe1.ScegliFunzione("abcd", 5);
             var actual = Classe1.getC();
             Assert.AreEqual(expected, actual);
         }
