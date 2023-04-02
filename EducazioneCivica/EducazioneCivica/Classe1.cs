@@ -35,15 +35,25 @@ namespace Nammasp
             return Encipher(input, k);
         }
         //ogni lettera nei char ha un valore fisso 
-        public static int calcolaNumero(string input, int key)
+        public static int calcolaNumeroSomma(string input, int key)
         {
             int output = 0;
             foreach (char ch in input)
             {
-                output += ch;
-                output = output - 96;
+                output += ch-96;
             }
             return output*key;
+        }
+
+        public static double calcolaNumeroProdotto(string input, int key)
+        {
+            double output = 1;
+            foreach (char ch in input)
+            {
+                output = output*(ch-96);
+            }
+            int res = Convert.ToInt32(Math.Ceiling(output /= key));
+            return res;
         }
 
         public static void Main(String[] args)
