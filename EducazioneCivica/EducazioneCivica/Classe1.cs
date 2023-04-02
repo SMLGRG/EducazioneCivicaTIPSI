@@ -35,6 +35,10 @@ namespace Nammasp
             return Encipher(input, k);
         }
 
+        public static int calcolaNumero(string input, int key)
+        {
+            return 0;
+        }
 
         public static void Main(String[] args)
         {
