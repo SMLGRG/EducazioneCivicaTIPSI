@@ -78,9 +78,6 @@ namespace Nammasp
 
         public static void Main(String[] args)
         {
-            ScegliFunzione("paolo", 5);
-            Console.WriteLine("numero");
-            Console.WriteLine(getC());
         }
     }
 }
